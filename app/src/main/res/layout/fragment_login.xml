@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:padding="6dp"
+            android:src="@drawable/icon_guitar" />
+
+        <TextView
+            android:id="@+id/txt_bolero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="18dp"
+            android:text="Bolero"
+            android:textColor="@color/mauTrang"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:orientation="vertical">
+
+        <t3h.com.musicbolero.customview.CustomEdittextEmail
+
+            android:id="@+id/edt_email_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="6dp"
+            android:hint="Địa chỉ email"
+            android:maxLines="1"
+            android:textColor="@color/mauXam"
+            android:textColorHint="@color/mauXam" />
+
+        <t3h.com.musicbolero.customview.CustomPasswordEdittext
+            android:id="@+id/edt_passwork_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="6dp"
+            android:hint="Mật khẩu"
+            android:maxLines="1"
+            android:textColor="@color/mauXam"
+            android:textColorHint="@color/mauXam" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_login_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_login_sigup"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/mauTrang" />
+
+        <Button
+            android:id="@+id/btn_register_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_login_sigup"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="@color/mauTrang" />
+    </LinearLayout>
+
+</LinearLayout>
