@@ -1,73 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:id="@+id/rc_main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <android.support.v4.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <!--<android.support.v4.widget.NestedScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical">-->
 
-            <FrameLayout
+            <!--<FrameLayout-->
+                <!--android:scrollbars="vertical"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="200dp">-->
 
-                android:layout_width="match_parent"
-                android:layout_height="200dp">
+                <!--<android.support.v4.view.ViewPager-->
 
-                <android.support.v4.view.ViewPager
+                    <!--android:id="@+id/viewpager_trangchu"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="200dp">-->
 
-                    android:id="@+id/viewpager_trangchu"
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp">
+                <!--</android.support.v4.view.ViewPager>-->
 
-                </android.support.v4.view.ViewPager>
-
-                <com.matthewtamlin.sliding_intro_screen_library.indicators.DotIndicator
-                    android:id="@+id/indicator_trang_chu"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="96dp"
-                    app:selectedDotColor="@color/mauTrang"
-                    app:unselectedDotColor="@color/mauTrang">
-
-
-                </com.matthewtamlin.sliding_intro_screen_library.indicators.DotIndicator>
-
-            </FrameLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="8dp"
-                android:text="Ký  Ức"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="8dp"
-                android:text="Những ca khúc đi cùng năm tháng" />
-
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/recyclerview_trangchu"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-            </android.support.v7.widget.RecyclerView>
+                <!--<com.matthewtamlin.sliding_intro_screen_library.indicators.DotIndicator-->
+                    <!--android:id="@+id/indicator_trang_chu"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:layout_marginLeft="96dp"-->
+                    <!--app:selectedDotColor="@color/mauTrang"-->
+                    <!--app:unselectedDotColor="@color/mauTrang">-->
 
 
-        </LinearLayout>
+                <!--</com.matthewtamlin.sliding_intro_screen_library.indicators.DotIndicator>-->
 
+            <!--</FrameLayout>-->
 
-    </android.support.v4.widget.NestedScrollView>
+            <!--<TextView-->
+                <!--android:scrollbars="vertical"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_margin="8dp"-->
+                <!--android:text="Ký  Ức"-->
+                <!--android:textSize="18sp"-->
+                <!--android:textStyle="bold" />-->
 
-</LinearLayout>
+            <!--<TextView-->
+                <!--android:scrollbars="vertical"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_margin="8dp"-->
+                <!--android:text="Những ca khúc đi cùng năm tháng" />-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:scrollbars="vertical"-->
+                <!--android:id="@+id/recyclerview_trangchu"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+            <!--</android.support.v7.widget.RecyclerView>-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:scrollbars="vertical"-->
+                <!--android:layout_marginTop="6dp"-->
+                <!--android:id="@+id/recyclerview_baihat"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+            <!--</android.support.v7.widget.RecyclerView>-->
+        <!--</LinearLayout>-->
+    <!--</android.support.v4.widget.NestedScrollView>-->
+
+</android.support.v7.widget.RecyclerView>

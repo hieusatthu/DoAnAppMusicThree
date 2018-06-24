@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import com.squareup.picasso.Picasso;
 
 import t3h.com.musicbolero.R;
+import t3h.com.musicbolero.constant.iConstant;
 
 /**
  * Created by songsong on 6/20/2018.
@@ -18,6 +19,8 @@ import t3h.com.musicbolero.R;
 
 public class FragmentChuDeMoiQuangLe extends Fragment{
     private ImageView imgQuangLe;
+    private String url= iConstant.SERVER_NAME+"/hinhchudemoi/chude_quangle.jpg";
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -29,7 +32,7 @@ public class FragmentChuDeMoiQuangLe extends Fragment{
     private void anhXa(View view) {
         imgQuangLe=view.findViewById(R.id.img_chudemoi_quangle);
         Picasso.with(getContext()).load
-                ("http://192.168.78.101:8080/appmusic/hinhchudemoi/chude_quangle.jpg").into(imgQuangLe);
+                ("http://192.168.78.104:8080/appmusic/hinhchudemoi/chude_quangle.jpg").into(imgQuangLe);
 
     }
 }

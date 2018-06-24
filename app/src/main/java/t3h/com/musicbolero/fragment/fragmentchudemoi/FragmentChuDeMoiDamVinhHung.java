@@ -14,6 +14,7 @@ import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
 import t3h.com.musicbolero.R;
+import t3h.com.musicbolero.constant.iConstant;
 
 /**
  * Created by songsong on 6/20/2018.
@@ -22,6 +23,7 @@ import t3h.com.musicbolero.R;
 public class FragmentChuDeMoiDamVinhHung extends Fragment {
     private ImageView imgDamVinhHung;
     private ProgressBar progressBar;
+    private String url= iConstant.SERVER_NAME+"/hinhchudemoi/chude_saigonbolerovahung.jpg";
 
 
     @Nullable
@@ -36,7 +38,7 @@ public class FragmentChuDeMoiDamVinhHung extends Fragment {
         imgDamVinhHung=view.findViewById(R.id.img_chudemoi_damvinhhung);
         progressBar=view.findViewById(R.id.progress_chudemoi_damvinhhung);
         Picasso.with(getContext()).
-                load("http://192.168.78.101:8080/appmusic/hinhchudemoi/chude_saigonbolerovahung.jpg").into(imgDamVinhHung, new Callback() {
+                load("http://192.168.78.104:8080/appmusic/hinhchudemoi/chude_saigonbolerovahung.jpg").into(imgDamVinhHung, new Callback() {
             @Override
             public void onSuccess() {
                 imgDamVinhHung.setVisibility(View.VISIBLE);
