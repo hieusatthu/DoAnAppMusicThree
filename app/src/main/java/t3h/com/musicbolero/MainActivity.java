@@ -29,6 +29,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //vi du
+        //em them mot doan code o dau
+        //sau do em push ( day code len) thi ban hieu lay ve sex thay doan code cua em da code
+        //--truoc khi day len phai commit cac file muon day len ( file do co the em tao moi,
+        //hoac em sua
+        //-- sau do pull( lay code cua ban hien lai neu co moi
+        //-- dau do day code len: push
         setContentView(R.layout.activity_main);
         anhXa();
         fragmentAdapterChuDe = new FragmentAdapterChuDe(getSupportFragmentManager());
