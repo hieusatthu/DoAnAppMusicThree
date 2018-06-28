@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
         initTabLayout();
     }
 
+    /// Nam dep trai
+    // Nam dep trai
     private void anhXa() {
         tabLayout = (TabLayout) findViewById(R.id.my_tablayout);
         viewPager = (ViewPager) findViewById(R.id.my_viewpager_main);
